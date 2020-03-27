@@ -1,0 +1,9 @@
+{
+  "name": "@monorepo/common",
+  "private": true,
+  "version": "0.0.1",
+  "description": "common package",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}

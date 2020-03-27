@@ -1,0 +1,44 @@
+{
+  "name": "@monorepo/webapp",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rm -rf node_modules build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "CI=true react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@monorepo/common": "*",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.5",
+    "@types/react": "^16.9.26",
+    "@types/react-dom": "^16.9.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "customize-cra": "^0.9.1",
+    "react-app-rewired": "^2.1.5",
+    "react-scripts": "3.4.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

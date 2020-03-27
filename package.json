@@ -1,0 +1,14 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "scripts": {
+    "install": "npx lerna bootstrap --hoist",
+    "clean": "npx lerna run clean && rm -rf node_modules",
+    "test": "npx lerna run test",
+    "build": "npx lerna run build",
+    "start": "npx lerna run --scope @monorepo/webapp start"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
