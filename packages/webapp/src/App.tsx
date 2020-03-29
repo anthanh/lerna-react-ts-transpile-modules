@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import getValue from '@monorepo/common/module1';
+import getValue from "@monorepo/common/module1";
+import { Module2Component } from "@monorepo/common/module2";
 
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         >
           Learn React {getValue()}
         </a>
+        <Module2Component></Module2Component>
       </header>
     </div>
   );
